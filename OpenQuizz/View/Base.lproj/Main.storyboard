@@ -43,7 +43,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lcr-G2-S6b">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lcr-G2-S6b" customClass="QuestionView" customModule="OpenQuizz" customModuleProvider="target">
                                 <rect key="frame" x="67" y="32" width="245" height="245"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -60,6 +60,10 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="icon" destination="EJm-F7-vJ6" id="ZN4-6G-SLZ"/>
+                                    <outlet property="label" destination="Ilh-5j-7Dd" id="Kdi-yB-ijh"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.34645563359999998" green="0.41798138620000003" blue="0.51361513140000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
