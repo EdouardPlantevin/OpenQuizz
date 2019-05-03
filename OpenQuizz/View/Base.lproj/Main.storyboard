@@ -31,6 +31,9 @@
                                 <state key="normal" title="New Game">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapNewGameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="nUK-Cb-tFn"/>
+                                </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="shY-Bw-aHO">
                                 <rect key="frame" x="169" y="567" width="37" height="37"/>
@@ -69,6 +72,12 @@
                         <color key="backgroundColor" red="0.34645563359999998" green="0.41798138620000003" blue="0.51361513140000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="shY-Bw-aHO" id="4Lo-rq-hSR"/>
+                        <outlet property="newGameButton" destination="2qe-JY-9DU" id="CfJ-mD-XRR"/>
+                        <outlet property="questionView" destination="Lcr-G2-S6b" id="Ve4-ow-I0p"/>
+                        <outlet property="scoreLabel" destination="8EN-3A-wAp" id="GYl-eG-5OB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
